@@ -3,15 +3,15 @@
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static void main() {
 
         int i = 1;
         while (i < 100) {
             // Find out which numbers divide i.
-            i = doFizzBuzzWhile(i);
+            i = doFizzBuzz(i);
         }
     }
-    private static int doFizzBuzzWhile(int i) {
+    public static int doFizzBuzz(int i) {
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
 
